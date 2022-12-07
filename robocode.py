@@ -10,7 +10,7 @@ intial_position = [float(input('input your vehile x-coordinate:')),float(input('
 goal = [float(input('input your goal x-coordinate:')),float(input('input your goal y-coordinate:'))]#user input for target coordinates
 obstacles=int(input('enter the number of obstacles wanted:')) #user input for number of obstacles
 show_obs_dist=str(input('would you like to see the distance and angle to obstacles? (yes or no):'))
-anim = VehicleIcon('tiralrobo',scale=4)
+anim = VehicleIcon('robot',scale=4)
 
 #creating a robot icon on the grid
 veh = Bicycle(
