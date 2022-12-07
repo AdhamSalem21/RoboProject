@@ -12,10 +12,10 @@ The aim of this project is to provide autonomous navigation for a robot to reach
 
 
 ## User Inputs
-- Coordinates of the robot.
-- Coordinates of the target.
-- Number of obstacles.
-- Decision to show distance and angle to target
+-Coordinates of the robot.
+-Coordinates of the target.
+-Number of obstacles.
+-Decision to show distance and angle to target
 
 ##Methodology
 
