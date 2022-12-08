@@ -40,7 +40,7 @@ To avoid obstacles a function was defined and named as Avoid_obstacles. This fun
 - Robot gets a steady speed of 2 and an angle = Goal_heading.
 - If the distance between the robot and the obstacle is lesser than 3 it checks if the angle is lesser than pi/4 and if so it gives a steering angle to the veh.step function of pi/4.
 - Robot steers away from obstacles and stops at the target coordinates.
-
+![Flowchart](Flowchart.png)
 ![Navigation code](NavCode.png)
 
 ## Improvements
