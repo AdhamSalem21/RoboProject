@@ -41,9 +41,7 @@ To avoid obstacles a function was defined and named as Avoid_obstacles. This fun
 - If the distance between the robot and the obstacle is lesser than 3 it checks if the angle is lesser than pi/4 and if so it gives a steering angle to the veh.step function of pi/4.
 - Robot steers away from obstacles and stops at the target coordinates.
 
-
-
-![Navigation code](Body code.png)
+![Navigation code](NavCode.png)
 
 ## Improvements
 Our code runs perfectly and the algorithm to avoid the obstacle and reach the target works smoothly. However, we could not execute the algorithem to make the robot avoid the walls of the maze correctly. We had two approaches in mind, One is to make a list of the walls coordinates and make the robot avoid those coordinates but we got an error stating that the list is too ambigous. The second approach was to create rectangular blocks that cover the walls of the maze but we could not comprehend how to make a comparison between the vehicle coordinates and the coordinates of said blocks.
