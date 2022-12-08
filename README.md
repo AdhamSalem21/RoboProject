@@ -38,7 +38,7 @@ Our code runs perfectly and the algorithm to avoid the obstacle and reach the ta
 ## Contribution towards the code
 Unfortunately we as a group had a problem with commiting the changes in the code from ubuntu. Therefore, we uploaded our file after it was finished on github.
 
-We will create a list of contributions as we have been told by Doctor Khaled Geneidy.
+We created a list of contributions as we have been told by Doctor Khaled Geneidy.
 
 - Adham Saad: Worked on reaching the target algorithm and avoiding obstacles.
 - Yousef Mamdouh: Worked on reaching the target algorithm and avoiding obstacles.
