@@ -30,8 +30,18 @@ The end result is as expected where the robot icon reaches the target while avoi
 ## Methodology
 The movement code is desired to satisfy two main task:
 ### Movement to target
-To achieve this we make use of the atan2 function from the math library named goal_heading in our code, which helps with calculating the angle of target from the robot. To reach the target we umake use of goal heading by moving the robot using veh.step which is a function in the robotics toolbox which needs two arguments the speed and an angle. The angle in the step is uses the goal_heading which makes the robot move towards the target with a steady speed and with an angle that ensures it reaching the target. Once it reaches the target, the robot stops. 
+To achieve this we make use of the atan2 function from the math library named goal_heading in our code, which helps with calculating the angle of target from the robot. To reach the target we umake use of goal heading by moving the robot using veh.step which is a function in the robotics toolbox which needs two arguments, the speed and an angle. The angle in the step is uses the goal_heading which makes the robot move towards the target with a steady speed and with an angle that ensures it reaching the target. Once it reaches the target, the robot stops. 
 ### Avoid obstacles
+To avoid obstacles a function was defined and named as Avoid_obstacles. This function uses the readings of the sensor which gives the distance and the angle between the robot and the obstacle. The loops used basically check if the distance between them is lesser than 3 and the angle is lesser than pi/4 and then returns false, if not it keeps moving towards the target normally. If false is returned, it is used in the movement where the robot has a steering angle of pi/4.
+### Overall Functionality
+- The user inputs the target and the robot coordinates and the number of obstacles.
+- The sensor calculates distance and angle between robot and obstacles.
+- Goal_heading calculates angle between robot and target.
+- Robot gets a steady speed of 2 and an angle = Goal_heading.
+- If the distance between the robot and the obstacle is lesser than 3 it checks if the angle is lesser than pi/4 and if so it gives a steering angle to the veh.step function of pi/4.
+- Robot steers away from obstacles and stops at the target coordinates.
+
+
 
 ![Navigation code](Body code.png)
 
