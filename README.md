@@ -27,9 +27,11 @@ The output after the user inputs shows the robot icon at the coordinates chosen.
 The end result is as expected where the robot icon reaches the target while avoiding all obstacles.
 ![End result](End.png)
 
-
-
-
 ## Methodology
+
+
+## Improvements
+Our code runs perfectly and the algorithm to avoid the obstacle and reach the target works smoothly. However, we could not execute the algorithem to make the robot avoid the walls of the maze correctly. We had two approaches in mind, One is to make a list of the walls coordinates and make the robot avoid those coordinates but we got an error stating that the list is too ambigous. The second approach was to create rectangular blocks that cover the walls of the maze but we could not comprehend how to make a comparison between the vehicle coordinates and the coordinates of said blocks.
+
 
 
