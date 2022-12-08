@@ -25,7 +25,7 @@ The output after the user inputs shows the robot icon at the coordinates chosen.
 ![Starting Positions](start.png)
 
 The end result is as expected where the robot icon reaches the target while avoiding all obstacles.
-![End result](end.png)
+![End result](End.png)
 
 
 
