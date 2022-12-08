@@ -17,6 +17,13 @@ The aim of this project is to provide autonomous navigation for a robot to reach
 - Number of obstacles.
 - Decision to show distance and angle to target
 
+## Output
+The terminal output that the user views, asks for the user to input the vehicle intial position, the target coordinates, the number of obstacles desired and whether he would like to view the sensor readings(distance and angle from the vehicle to each obstacle) or not.
+![Terminal output](/terminal output.png)
+
+
+
+
 ## Methodology
 
 
