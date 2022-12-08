@@ -35,5 +35,14 @@ Our code runs perfectly and the algorithm to avoid the obstacle and reach the ta
 
 ![Rectangular blocks Algorithm](Rectangles.png)
 
+## Contribution towards the code
+Unfortunately we as a group had a problem with commiting the changes in the code from ubuntu. Therefore, we uploaded our file after it was finished on github.
+
+We will create a list of contributions as we have been told by Doctor Khaled Geneidy
+
+-Adham Saad: Worked on reaching the target algorithm and avoiding obstacles.
+-Yousef Mamdouh: Worked on reaching the target algorithm and avoiding obstacles.
+-Mohammed Adel: worked on initialising the vehicle icon, the target icon, user inputs and the sesnor reading algorithm.
+
 
 
