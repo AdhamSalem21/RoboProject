@@ -43,8 +43,8 @@ To avoid obstacles a function was defined and named as Avoid_obstacles. This fun
 ![Flowchart](Flowchart.png)
 ![Navigation code](NavCode.png)
 
-## Improvements
-Our code runs perfectly and the algorithm to avoid the obstacle and reach the target works smoothly. However, we could not execute the algorithem to make the robot avoid the walls of the maze correctly. We had two approaches in mind, One is to make a list of the walls coordinates and make the robot avoid those coordinates but we got an error stating that the list is too ambigous. The second approach was to create rectangular blocks that cover the walls of the maze but we could not comprehend how to make a comparison between the vehicle coordinates and the coordinates of said blocks.
+## Limitations and further Improvement
+Our code runs perfectly and the algorithm to avoid the obstacle and reach the target works smoothly. However, we could not execute the algorithem to make the robot avoid the walls of the maze correctly. We had two approaches in mind, One is to make a list of the walls coordinates and make the robot avoid those coordinates but we got an error stating that the list is too ambigous. The second approach was to create rectangular blocks that cover the walls of the maze but we could not comprehend how to make a comparison between the vehicle coordinates and the coordinates of said blocks. Another small problem that was noticed is if there is an obstacle within a distance of 3 from the target, this causes the robot to spin around itself at the target because it is instructed to stop when reaching the target but at the same time constructed to steer away if it is within a range of distance 3 from an obstacle.
 
 ![Rectangular blocks Algorithm](Rectangles.png)
 
