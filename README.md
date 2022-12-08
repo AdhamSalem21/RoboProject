@@ -22,7 +22,7 @@ The terminal output that the user views, asks for the user to input the vehicle 
 ![Terminal output](terminal output.png)
 
 The output after the user inputs shows the robot icon at the coordinates chosen.
-![Starting Positions](start.png)
+![Initial position](Start.png)
 
 The end result is as expected where the robot icon reaches the target while avoiding all obstacles.
 ![End result](End.png)
