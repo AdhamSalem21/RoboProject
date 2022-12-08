@@ -17,6 +17,6 @@ The aim of this project is to provide autonomous navigation for a robot to reach
 -Number of obstacles.
 -Decision to show distance and angle to target
 
-##Methodology
+## Methodology
 
 
