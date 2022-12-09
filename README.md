@@ -53,7 +53,8 @@ def avoid_obstacles(sensor):
     veh.step(2.5,0)
     veh._animation.update(veh.x)
     plt.pause(0.05)
-
+'''
+'''
 #loop that moves the vehicle towards the target 
 run=True
 while(run):
