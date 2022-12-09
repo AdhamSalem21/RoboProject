@@ -53,6 +53,10 @@ sensor=RangeBearingSensor(robot=veh,map=map,animate=True)
 #prints the obstacle distance and angle from vehicle based on user input
 if(show_obs_dist== 'yes'):
     print('Sensor readings: \n', sensor.h(veh.x))
+elif (show_obs_dist=='no'):
+  print('Alright')
+else:
+  print('error please restart, it is a yes or no only')
  
 #function to avoid the obstacles
 def avoid_obstacles(sensor):
