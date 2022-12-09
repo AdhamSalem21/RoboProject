@@ -42,6 +42,33 @@ To avoid obstacles a function was defined and named as Avoid_obstacles. This fun
 - Robot steers away from obstacles and stops at the target coordinates.
 ![Flowchart](Flowchart.png)
 ![Navigation code](NavCode.png)
+'''
+#function to avoid the obstacles
+def avoid_obstacles(sensor):
+  for i in sensor.h(veh.x):
+     if (i[0] < 3):
+      if(abs(i[1]) < pi/4):
+          return False
+  else:
+    veh.step(2.5,0)
+    veh._animation.update(veh.x)
+    plt.pause(0.05)
+
+#loop that moves the vehicle towards the target 
+run=True
+while(run):
+  goal_heading= atan2 (goal[1]-veh.x[1],goal[0]-veh.x[0])
+  steer=goal_heading-veh.x[2]
+  veh.step(2,steer)
+  if((abs(goal[0]-veh.x[0])>0.05) or (abs(goal[1]-veh.x[1])>0.05)):
+    if (avoid_obstacles(sensor) is False):
+     steer = (veh.x[2]+ pi/4 or veh.x[2]+ pi/4)
+     veh.step(2.5,steer)
+  else:
+    run=False
+  veh._animation.update(veh.x)
+  plt.pause(0.005)
+'''
 
 ## Limitations and further Improvement
 Our code runs perfectly and the algorithm to avoid the obstacle and reach the target works smoothly. However, we could not execute the algorithem to make the robot avoid the walls of the maze correctly. We had two approaches in mind, One is to make a list of the walls coordinates and make the robot avoid those coordinates but we got an error stating that the list is too ambigous. The second approach was to create rectangular blocks that cover the walls of the maze but we could not comprehend how to make a comparison between the vehicle coordinates and the coordinates of said blocks. Another small problem that was noticed is if there is an obstacle within a distance of 3 from the target, this causes the robot to spin around itself at the target because it is instructed to stop when reaching the target but at the same time constructed to steer away if it is within a range of distance 3 from an obstacle.
